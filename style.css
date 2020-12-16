@@ -1,44 +1,105 @@
+
 body,
 html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   background: url(header.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
-h1{
- font-size: 3em;
- color: #00f3ff;
- text-align: center;
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
+.wrapper{
+	display: flex;
+	position: relative;
+}
+.wrapper .sidebar{
+	position: fixed;
+	height: 100%;
+	width: 18%;
+	max-width: 200px;
+	background-color: rgba(147, 37, 161, 0);
+	padding: 1em 1em;
+	z-index: 2;
+	transition: all ease 1s;
+}
+.wrapper .sidebar:hover{
+	background-color: rgba(147, 37, 161, 0.3);
+}
+.wrapper .sidebar ul li i{
+	
+	text-size-adjust: auto;
+	font-size: 1.4em;
+	margin-top: 30%;
+	padding-top: 10px;
+	color: rgba(147, 37, 161, 0.3);
+	transition: all ease 0.5s ;
+}
+.wrapper .sidebar ul{
+	list-style: none;
+}
+.wrapper .sidebar ul li i:hover{
+	font-weight: bolder;
+	font-size: 2em;
+	color: rgb(0, 0, 0);
+}
+h1.text-uppercase{
+	font-size: 3em;
+	color: rgba(218, 119, 243, 0.6);
+	text-align:center;
+	text-size-adjust: auto;
+	margin-left: 1em;
+	overflow: hidden;
+	background: linear-gradient(90deg, #000, #fff, #000);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	background-clip: text;
+ 
+}
+@keyframes animate {
+	0% {
+	  background-position: -500%;
+	}
+	100% {
+	  background-position: 500%;
+	}
+  }
+
+
+
 hr{
-	border-color: #F05F44;
+	border-color: #2f2a50;
 	border-width: 2px;
-	max-width: 60px;
+	max-width: 70px;
 }
 .buffer{
-	height: 15rem;
+	height: 18rem;
 }
 
 .btn{
 	border-radius: 100px;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
 .btn-primary{
-	background-color: #F05F44;
-	border-color:#F05F44;
+	background-color: rgba(80, 78, 209, 0.3);
+	border-color:#2f2cd6;
+	font-weight: bold;	
+	transition: ease 1s;
 }
 .btn-primary:hover{
-	background-color: #dc543b;
-	border-color:#F05F44;
+	background-color: #6121d6;
+	border-color:#280668;
 	border-width: 4px;
 }
 
 
 .btn-xl{
- padding: 1rem 2rem;
+    padding: 1rem 2rem;
 }
