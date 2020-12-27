@@ -12,8 +12,8 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
+
 .wrapper{
 	display: flex;
 	position: relative;
@@ -31,8 +31,11 @@ html {
 .wrapper .sidebar:hover{
 	background-color: rgba(147, 37, 161, 0.3);
 }
+
+.wrapper .sidebar ul{
+        list-style: none;
+}
 .wrapper .sidebar ul li i{
-	
 	text-size-adjust: auto;
 	font-size: 1.4em;
 	margin-top: 30%;
@@ -40,19 +43,18 @@ html {
 	color: rgba(147, 37, 161, 0.3);
 	transition: all ease 0.5s ;
 }
-.wrapper .sidebar ul{
-	list-style: none;
-}
 .wrapper .sidebar ul li i:hover{
 	font-weight: bolder;
 	font-size: 2em;
 	color: rgb(0, 0, 0);
 }
+
 h1.text-uppercase{
 	font-size: 3em;
 	color: rgba(218, 119, 243, 0.6);
 	text-align:center;
 	text-size-adjust: auto;
+	padding-left: 88px;
 	margin-left: 1em;
 	overflow: hidden;
 	background: linear-gradient(90deg, #000, #fff, #000);
