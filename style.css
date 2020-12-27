@@ -22,7 +22,7 @@ html {
 	position: fixed;
 	height: 100%;
 	width: 18%;
-	max-width: 200px;
+	max-width: 150px;
 	background-color: rgba(147, 37, 161, 0);
 	padding: 1em 1em;
 	z-index: 2;
